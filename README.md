@@ -11,10 +11,8 @@ To install the plugin :
 3. Add the following lines in your file `LocalSettings.php`
 
 ```php
-// mw.v 1.24.x or less
+// WaveDrom extension
 require_once "$IP/extensions/wavedrom/wavedrom.php";
-// mw.v 1.25.x or above
-wfLoadExtension( '<wavedrom>' );
 ```
 
 ## Use it in mediawiki
