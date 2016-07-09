@@ -2,12 +2,12 @@
 $wgHooks['ParserFirstCallInit'][] = 'WaveDrom::onParserSetup';
 class WaveDrom {
       // Register any render callbacks with the parser
-      function onParserSetup( Parser $parser ) {
+      public static function onParserSetup( Parser $parser ) {
                // When the parser sees the <wavedrom> tag, it executes renderTagWavedrom (see below)
                   $parser->setHook( 'wavedrom', 'WaveDrom::renderTagWavedrom' );
                   }
                   // Render <wavedrom>
-  function renderTagWavedrom( $input, array $args, Parser $parser, PPFrame $frame ) {
+  public static function renderTagWavedrom( $input, array $args, Parser $parser, PPFrame $frame ) {
     //$parser->addHeadItem(
     $parser->getOutput()->addHeadItem('<script src="http://wavedrom.com/skins/default.js" type="text/javascript"></script>', 'WaveDromDefault');
     $parser->getOutput()->addHeadItem('<script src="http://wavedrom.com/wavedrom.min.js" type="text/javascript"></script>', 'WaveDromMain');
