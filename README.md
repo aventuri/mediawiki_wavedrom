@@ -7,7 +7,7 @@ This is a quick&dirty extension for mediawiki to add [wavedrom](http://wavedrom.
 To install the plugin :
 
 1. In mediawiki directory named `extensions`, create a subdirectory named `wavedrom`
-2. Copy the file `wavedrom.php` under the freshly cleated directory `extensions/wavedrom`
+2. Copy the file `wavedrom.php` under the freshly created directory `extensions/wavedrom`
 3. Add the following lines in your file `LocalSettings.php`
 
 ```php
